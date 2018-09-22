@@ -54,13 +54,13 @@ public class ObservableTest {
     }
 
     @Test
-    public void impl_just() {
+    public void test_just() {
         Observable<Integer> observable = Observable.just(1, 2, 3, 4, 5, 6);
         observable.subscribe(item -> System.out.println(item));
     }
 
     @Test
-    public void impl_map() {
+    public void test_map() {
         Observable<Integer> observable =
                 Observable.just(1, 2, 3, 4, 5, 6);
         observable.subscribe(item -> System.out.println(item));
